@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
     def index
-        @tweet = 'Developing Tweety with docker now!'
+        @tweet = Tweet.find(1)
     end
 end
