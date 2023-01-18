@@ -20,4 +20,13 @@
             </a>
         </span>
     </div>
+    <div class="container">
+        <!-- form-->
+        <% if current_user %>
+            <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
+                <textarea cols="30" name="text" placeholder="Fill in your comment!" rows="2"></textarea>
+                <input type="submit" value="CONFIRM">
+            <% end %>
+        <% end %>
+    </div>
 </div>
