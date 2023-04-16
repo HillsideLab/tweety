@@ -16,7 +16,7 @@
         <%= simple_format(@tweet.text) %>
         <span class="name">
             <a href="/users/<%= @tweet.user.id %>">
-                <span>Poster</span><%= @tweet.user.nickname %>
+                <span>Posted by</span><%= @tweet.user.nickname %>
             </a>
         </span>
     </div>

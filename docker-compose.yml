@@ -17,7 +17,7 @@ services:
       - db-volume:/var/lib/mysql
     environment:
       MYSQL_DATABASE: tweety_db
-      MYSQL_USER: root
+      MYSQL_USER: user
       MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: password
     ports:
